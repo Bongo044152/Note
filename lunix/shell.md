@@ -238,7 +238,7 @@ bongo@MSI:/mnt/c/Users/Sakiyago/Desktop/Shell_lenguage/lunix$ cat -n test.txt
 bongo@MSI:/mnt/c/Users/Sakiyago/Desktop/Shell_lenguage/lunix$ rm test.txt  # 刪除文黨
 ```
 
-11. vi 與 vim : 文扁編譯器，這個可以自行了解、學習
+11. vi 與 vim : 文本編譯器，這個可以自行了解、學習
 
 12. `find` : 檔案查詢
 ```bash
