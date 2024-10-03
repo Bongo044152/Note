@@ -35,8 +35,8 @@ useradd [option] UserName
 
 Option:<br>
 `-m`: 自動創建用戶的主目錄<br>
-`-s`:指定用戶默認的登入shell，例如`/bin/bash`<br>
-`-G`:指定用戶所屬的附加群組
+`-s`: 指定用戶默認的登入shell，例如`/bin/bash`<br>
+`-G`: 指定用戶所屬的附加群組
 
 5. 設定用戶密碼
 ```bash
@@ -83,7 +83,7 @@ cat /etc/os-release
 ## 介紹系統根目錄
 1. `/bin`
 
-**執行命令所需的基本執行黨**
+**執行命令所需的基本執行檔**
 
 2. `/boot`
 
