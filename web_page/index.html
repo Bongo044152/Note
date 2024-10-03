@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明哲</title>
+    <!-- CSS 代碼區塊 -->
+    <style>
+        h1{
+            color: green;
+            text-shadow: 5px 5px 3px rgb(0,0,0,0.7);
+            transition: transform .3s linear;
+        }
+        h1:hover{
+            transform: translateY(-25%);
+        }
+    </style>
+</head>
+<body>
+    <h1>我的表單</h1>
+    <h2>這是次級標題</h2>
+    <p>這是一串內文</p>
+    <form>
+        <label for="username">輸入你的使用者名稱:</label>
+        <input type="text" name="username" autocomplete="off" placeholder="輸入你的使用者名稱" required>
+        <br>
+        <label for="password">輸入你的密碼</label>
+        <input type="password" name="password" autocomplete="off" placeholder="輸入你的密碼" required>
+        <br>
+        <button>點我發送表單</button>
+    </form>
+    <br>
+    <textarea name="message" id="message"></textarea>
+</body>
+<!-- javascript 代碼 -->
+<script>
+    confirm("這是確認訊息"); // 頁面仔入跳出訊息確認框
+    // 選取第一個 'h1' 元素
+    const h1_element = document.querySelector("h1");
+    // 對該元素添加事件監聽器 ( 點擊事件 ) -> 當事件觸發，執行 alert("好痛!");
+    h1_element.addEventListener("click", () => {
+        alert("好痛!");
+    })
+</script>
+</html>
