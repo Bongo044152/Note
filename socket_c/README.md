@@ -45,9 +45,14 @@ gcc --version
 make --version
 ```
 
+## 可執行檔案
+
+- test3 系列
+
 ## 參考資料
 
 - 文章: https://zake7749.github.io/2015/03/17/SocketProgramming/
 - lunix文黨: https://www.linuxhowtos.org/C_C++/socket.htm
 - github 儲存庫... (搜尋中...)
 - medium 文章... (搜尋中...)
+- 教學文件: https://www.geeksforgeeks.org/socket-programming-cc/
