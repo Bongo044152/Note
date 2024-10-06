@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-// 新增資料型態
+// 再次簡化新增資料型態的過程
 typedef struct Node {
     int val;
     struct Node* next;
