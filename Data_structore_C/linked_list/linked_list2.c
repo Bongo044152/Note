@@ -39,6 +39,12 @@ int main() {
         current = current->next;
     }
 
+    current = head;
+    for(int i=0 ; i<11 ; i++){
+        printf("%d ", current->val);
+        current = current->next;
+    }
+
     // 使用 while 迴圈來刪除鏈結串列
     current = head;
     // 當 current == NULL 時，即表示鏈結串列已經達到尾巴的後面 (即表示 NULL)
