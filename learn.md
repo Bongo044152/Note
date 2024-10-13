@@ -104,3 +104,5 @@
 
 @. 研究C語言的環境 (gcc、cMack、vscode的配置問題)
 @. C語言標頭檔
+@. C語言 hashmap
+@. C語言捕獲異常
