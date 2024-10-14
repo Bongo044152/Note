@@ -56,7 +56,7 @@ int main() {
     printf("使用 遞迴 輸出鏈結串列的結果 : ");
     print(head);
 
-    // <- 在這個地方記得 free 鏈結串列，你可以自己試著寫寫看，或者參考 "linked_list2.c : 46"
+    // <- 在這個地方記得 free 鏈結串列，你可以自己試著寫寫看，或者參考 "linked_list2.c : 56"
 
     return 0;
 }

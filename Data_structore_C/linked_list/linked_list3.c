@@ -29,7 +29,7 @@ void create_node(Node** newNode, int val){
 int main() {
     // 將指針初始化為 NULL 即表示這是一個空指針，理論上避免了訪問該指針所對應的記憶體位置
     Node* head = NULL;
-
+    
     // 建立 head
     create_node(&head, 0);
 
