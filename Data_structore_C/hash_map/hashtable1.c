@@ -29,7 +29,7 @@ typedef struct Storage{
     int length;
 } Storage;
 
-Storage table[10];
+Storage table[Table_size];
 
 void init_table() {
     for (int i = 0; i < Table_size; i++) {
@@ -39,22 +39,22 @@ void init_table() {
 }
 
 
-int hash(const Data* data){
-    int length = strlen(data->key);
+int hash(const char* name){
+    int length = strlen(name);
     if(length > Key_length){
         return -1;
     }
 
     unsigned int res = 0;
     for(int i=0; i<length; i++){
-        res = (unsigned int)(data->key)[i] * (i+1) * 1.25 + res;
+        res = (unsigned int)(name)[i] * (i+1) * 1.25 + res;
     }
     return res % Table_size;
 }
 
 
 int add_element(Data* data) {
-    int index = hash(data);
+    int index = hash(data->key);
     if(index < 0){
         get_error_mes(index);
     }
@@ -83,6 +83,19 @@ void print_all() {
     }
 }
 
+int gat_value(char* name){
+    int index = hash(name);
+    Storage temp = table[index];
+
+    // 透過查表來尋找
+    for (int i = 0; i < temp.length; i++) {
+        if(strcmp(name, temp.datas[i].key) == 0){
+            return temp.datas[i].val;
+        }
+    }
+    return -1;
+}
+
 int main() {
     init_table();
 
@@ -104,7 +117,17 @@ int main() {
     
     print_all();
 
-    // Free allocated memory
+    // 嘗試取得被存入的值
+    char* element = "test1";
+    int res = gat_value(element);
+    if(res >= 0){
+        printf("%s 的數值 : %d", element, res);
+    }
+    else{
+        printf("查詢失敗，該元素不存在");
+    }
+
+    // Free memory
     for (int i = 0; i < Table_size; i++) {
         free(table[i].datas);
     }
