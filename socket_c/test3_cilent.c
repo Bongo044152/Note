@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#define PORT 8080
+#define PORT 5090
 #define BUFFER_SIZE 1024
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
     }
 
     serv_addr.sin_family = AF_INET;
-    serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    serv_addr.sin_addr.s_addr = inet_addr("134.208.49.28");
     serv_addr.sin_port = htons(PORT);
 
     // 連接伺服器
