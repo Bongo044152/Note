@@ -14,7 +14,7 @@ struct Node {
 typedef struct Node Node;
 
 // 建立一個小工具，可以幫助我們快速建構 node
-// 使用二級指針來訪問並且更改玉更改的值
+// 使用二級指針來訪問並且更改欲更改的值
 void create_node(Node** newNode, int val){
 
     // 動態分配記憶體 : 即表示得到一個指向 鏈結串列的 "頭" 的指針
@@ -26,11 +26,10 @@ void create_node(Node** newNode, int val){
     (*newNode)->next = NULL;
 }
 
-
 int main() {
     // 將指針初始化為 NULL 即表示這是一個空指針，理論上避免了訪問該指針所對應的記憶體位置
     Node* head = NULL;
-
+    
     // 建立 head
     create_node(&head, 0);
 

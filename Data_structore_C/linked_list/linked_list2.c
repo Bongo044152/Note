@@ -30,12 +30,18 @@ int main() {
     struct Node* current = head;
 
     // 使用 for 迴圈建構鏈結串列
-    for( int i=0; i<10; i++){
+    for(int i=0; i<10; i++){
         // 建立一個新的節點
         struct Node* temp = create_node(i+1);
         // 當前節點需要指向新的節點
         current->next = temp;
         // 當前的節點需要移動到下一個節點作為更新
+        current = current->next;
+    }
+
+    current = head;
+    for(int i=0 ; i<11 ; i++){
+        printf("%d ", current->val);
         current = current->next;
     }
 

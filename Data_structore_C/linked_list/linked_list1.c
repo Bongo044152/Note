@@ -15,6 +15,14 @@ struct Node {
 int main() {
     // 宣告節點
     struct Node head;
+    int a = 8;
+    int* p1 = &a;
+    char b = 'A';
+    char* p2 = &b;
+
+    printf("..%d\n", sizeof(struct Node));
+    printf("..%d\n", sizeof(p1));
+    printf("..%d\n", sizeof(p2));
     // 初始化 head 的 val 值
     head.val = 8;
     
@@ -26,7 +34,7 @@ int main() {
     // 設定 head 的下一個值 (即指向下一個串列)
     head.next = &node1;
 
-    // 復職並且輸出
+    // 賦值並且輸出
     int head_val = head.val;
     int node1_val = node1.val;
 
