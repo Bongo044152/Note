@@ -1,3 +1,6 @@
+## 針對 CMake
 build
+
+## 針對 C 語言
 *.exe
 *.vscode

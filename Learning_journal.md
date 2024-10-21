@@ -14,6 +14,7 @@
 # List Of Next Learning Topic
 
 ## 程式語言
+
 - Rust 語言
 
 ## 網頁技術

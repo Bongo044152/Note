@@ -86,7 +86,8 @@ PS C:\Users\Sakiyago> netsh interface portproxy show all
 
 ## 參考資料
 
-- 文章: https://zake7749.github.io/2015/03/17/SocketProgramming/
+- 文章1: https://zake7749.github.io/2015/03/17/SocketProgramming/
+- hacjmd: https://hackmd.io/@zoo868e/socket-self-study
 - lunix文黨: https://www.linuxhowtos.org/C_C++/socket.htm
 - geeksforgeeks: https://www.geeksforgeeks.org/socket-programming-cc/
 - medium 文章 : https://blog.devgenius.io/socket-programming-in-c-client-4408231f9e65
