@@ -4,3 +4,6 @@ build
 ## 針對 C 語言
 *.exe
 *.vscode
+
+## 針對 node js
+node_modules
