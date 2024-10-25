@@ -7,3 +7,6 @@ build
 
 ## 針對 node js
 node_modules
+
+## 用於借放的資料夾
+temp

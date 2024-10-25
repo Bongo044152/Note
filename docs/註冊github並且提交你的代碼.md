@@ -198,3 +198,8 @@ PS C:\Users\Sakiyago\Desktop\hello> git remote add origin git@github.com:Bongo04
 
 你可以到 github上檢視有沒有成功上傳
 ![img](https://i.imghippo.com/files/LG6125Yo.jpg)
+
+
+## 一個良好的規範
+- [**十分钟学会正确的github工作流，和开源作者们使用同一套流程**](https://www.youtube.com/watch?v=uj8hjLyEBmU)
+- [**Git工作流**](https://medium.com/@trylovetom/%E8%AE%93%E6%88%91%E5%80%91%E4%BE%86%E4%BA%86%E8%A7%A3-github-flow-%E5%90%A7-4144caf1f1bf)
