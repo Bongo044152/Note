@@ -1,3 +1,5 @@
+// 代碼測試區塊
+
 import file_manager from './file_manager.mjs';
 const my_file_manager = new file_manager();
 

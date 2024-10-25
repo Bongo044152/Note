@@ -55,6 +55,3 @@ Hello, world! # 這是程式輸出
 
 - ytVideo : https://www.youtube.com/watch?v=T_KrYLW4jw8&list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ
 - rust book: https://doc.rust-lang.org/book/ch01-01-installation.html
-
-
-### <font color="red">注意! 沒意外的話本筆記不會再更新，因為這只是一份介紹文件</font>
