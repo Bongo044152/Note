@@ -88,9 +88,9 @@ Fork 是一個非常常見的提交流程，在尚未成熟的開發團隊中 ( 
 
 ### **步驟 1**
 
-首先你要做的是創建一個 Fork
+首先你要做的是創建一個 Fork ， **在創建之前請先確認左上角的黃色框框是你要的的遠端倉庫**。
 
-![img](https://i.imghippo.com/files/rFn2212sPE.jpg)
+![img](https://i.imghippo.com/files/P3020Ks.jpg)
 
 點選右上角的紅色按鈕，就可以創建 Fork 了!
 
@@ -121,9 +121,9 @@ PS C:\Users\Sakiyago\Desktop\5> git clone git@github.com:<Your_Name>/<Your_Repos
 ![img](https://i.imghippo.com/files/Jj8320bo.jpg)
 
 說明:
-    - 紅色框框呈現的使用者名稱要是 "別人的名稱" ， 因為你想要提交到 "別人的倉庫" 中。
-    - 綠色框框是它的 "倉庫位址" ，你可以選擇 https 或 ssh
-    - 綠色框框表示添加成功，下面會有命令說明
+- 紅色框框呈現的使用者名稱要是 "別人的名稱" ， 因為你想要提交到 "別人的倉庫" 中。
+- 綠色框框是它的 "倉庫位址" ，你可以選擇 https 或 ssh
+- 綠色框框表示添加成功，下面會有命令說明
 
 命令說明:
 ```shell
@@ -146,16 +146,16 @@ upstream        https://github.com/Bongo044152/test.git (push)
 ![img](https://i.imghippo.com/files/yj6320KnU.jpg)
 
 說明:
-    - 如果你有安裝 git graph 可以透過下方的黃色按鈕查看
-    - 上面是 fetch 後呈現出的 "提交紀錄圖" ( 藍色框框 )
-    - 你可以透過 `git log --graph --oneline --all` 在終端機中取得 "提交紀錄圖"
+- 如果你有安裝 git graph 可以透過下方的黃色按鈕查看
+- 上面是 fetch 後呈現出的 "提交紀錄圖" ( 藍色框框 )
+- 你可以透過 `git log --graph --oneline --all` 在終端機中取得 "提交紀錄圖"
 
 ### **步驟5-7**
 
 ![img](https://i.imghippo.com/files/vxwg3957dD.jpg)
 
 說明:
-    - 創建成功後，你會看到 紅色框框 裡面多一個 hello 的分支
+- 創建成功後，你會看到 紅色框框 裡面多一個 hello 的分支
 
 ```shell
 # 終端機的顯示 提交記錄圖 命令
@@ -169,7 +169,7 @@ PS C:\Users\Sakiyago\Desktop\5\test> git log --graph --oneline --all
 
 因為你先前已經移動到 hello 分支上，因此在 vscode 按下提交按鈕會提交到 hello 分支，而不是 main 分支
 
-點捲提交即可完成你在 hello 分支上的首次提交，提交內容格式如下 ( 我希望你這樣命名 )
+點捲提交即可完成你在 hello 分支上的首次提交，提交訊息格式如下 ( 我希望你這樣命名 )
 ```
 MsBongo: first commit
 ```
@@ -180,13 +180,15 @@ MsBongo: first commit
 
 ![img](https://i.imghippo.com/files/uQB7125vA.jpg)
 
-**注意! 是提交到你的遠端倉庫喔(origin)而非 upstream**
+**注意! 是提交到你的遠端倉庫 origin 而非 upstream**
+
+因為 origin 表示 "你的遠端倉庫" 而 "upstream" 是別人的遠端倉庫，也就是你的最終要提交上去的目標。
 
 ### **步驟11-14**
 
 > **<font color="red">注意! 要進行步驟 11-14 ，先確保你的所有更新都已經完成。 我們想要收到的是一份 "完整的更新" 而不是 "片段式的更新"。<br><br>如果你的更新還沒有完成，請你到本地分支 ( hello ) 繼續提交、推送。</font>**
 
-當你想要提交實，此時可能會有其他人已經提交自己的程式碼，因此可能發生衝突問題 ( 你可能和其他人編輯同一份文件，或者資料夾的位置產生移動.. )。
+當你想要提交時，此時可能會有其他人已經提交自己的程式碼，因此可能發生衝突問題 ( 你可能和其他人編輯同一份文件，或者資料夾的位置產生移動.. )。
 
 所以要先獲取其他人的更新新狀態，並且將其合併到你的本地 main 分支中。
 
@@ -195,7 +197,7 @@ MsBongo: first commit
 ![img](https://i.imghippo.com/files/YCWu6495eDw.jpg)
 
 指令說明:
-1. 獲取遠端更新: 在你編輯代碼的過程中，獲取其他人已經更新完成了! 所以要先獲取 upstream 的更新狀況
+1. 獲取遠端更新: 在你編輯代碼的過程中，獲取其他人已經更新完成了! 所以要先獲取 upstream ( 欲推送的目標倉庫 ) 的更新狀況
 ```shell
 PS C:\Users\Sakiyago\Desktop\5\test> git fetch upstream main
 remote: Enumerating objects: 3, done.
@@ -234,7 +236,7 @@ Successfully rebased and updated refs/heads/main.
 
 ![img](https://i.imghippo.com/files/ao6499n.jpg)
 
-點選綠色的 `New pull request` 即可創建一次提交。
+點選綠色的 `Create pull request` 即可創建一次提交。
 
 ![img](https://i.imghippo.com/files/wAx3563PRM.jpg)
 
@@ -248,13 +250,13 @@ Successfully rebased and updated refs/heads/main.
 
 ![img](https://i.imghippo.com/files/oDu9624nZI.jpg)
 
-閱讀到這裡，我先感謝你的耐心；Note倉庫上會有人進行投票等操作，只要票數過一並且沒有合併衝突，會有人幫你合併你的檔案到遠端倉庫! 如果你成功做到這裡，我在此感謝你的貢獻與願意讀到這裡耐心。
+閱讀到這裡，我先感謝你的耐心；Note倉庫上會有人進行投票等操作，只要票數超過1票並且沒有合併衝突，會有人幫你合併你的檔案到遠端倉庫!
 
 ## 衝突解決
 
 衝突的解決會比較複雜一些，對於 git 而言，如果同一份文件的某一行有兩個寫法/變更，git 不知道要保留哪一個變更，因此會發生衝突。
 
-具體的解決方式會有兩種，兩種都偏複雜... 總之只要有衝突，通常是直接叫你滾回去重寫，而不是線上修改。
+具體的解決方式會有兩種，兩種都偏複雜... 總之只要有衝突，通常是直接叫你滾回去線下解決衝突/重寫，而不是線上修改。
 
 ## 結語
 閱讀到這裡，我先感謝你的耐心與支持，如果你成功按照上述了操作流程並且成功提交你的筆記到 Note 倉庫，我在此感謝你對本倉庫的貢獻。
