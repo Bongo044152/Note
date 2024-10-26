@@ -205,4 +205,4 @@ PS C:\Users\Sakiyago\Desktop\hello> git remote add origin git@github.com:Bongo04
 - [**Git工作流**](https://medium.com/@trylovetom/%E8%AE%93%E6%88%91%E5%80%91%E4%BE%86%E4%BA%86%E8%A7%A3-github-flow-%E5%90%A7-4144caf1f1bf)
 
 ## 想了解更多嗎?
-- [**Github工作流**](docs/Github工作流.md)
+- [**Github工作流**](Github工作流.md)
