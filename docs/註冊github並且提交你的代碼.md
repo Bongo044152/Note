@@ -174,15 +174,15 @@ branch 'main' set up to track 'origin/main'.
 ![img](https://i.imghippo.com/files/Veqc7961pQ.jpg)
 
 其中:
-    - 黃色框框表示 "變更"，就是教學影片提到的站存區
-    - 當你點選紅色框框的 "+" 時，效力等同於 `git add fuck.txt`，也就是將變更提交到站存區
-    - 之後按下提交按鈕，就可以提交了! 別忘了添加你的提交訊息
+   - 黃色框框表示 "變更"，就是教學影片提到的站存區
+   - 當你點選紅色框框的 "+" 時，效力等同於 `git add fuck.txt`，也就是將變更提交到站存區
+   - 之後按下提交按鈕，就可以提交了! 別忘了添加你的提交訊息
 
 ![img](https://i.imghippo.com/files/CHr2688B.jpg)
 
 其中:
-    - "蔡基" 是我的提交訊息，通常會是 "first commit" 比較常見
-    - 右上角的 "打勾符號" 效力等同於 `git commit -m "蔡基"`
+   - "蔡基" 是我的提交訊息，通常會是 "first commit" 比較常見
+   - 右上角的 "打勾符號" 效力等同於 `git commit -m "蔡基"`
 
 4. 推送到遠端
 
