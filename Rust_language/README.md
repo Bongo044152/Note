@@ -1,5 +1,10 @@
 # Rust 語言的學習
 
+## 倉庫介紹
+這是一個學習 rust 的倉庫，在這裡你可以透過裡面的筆記學習 rust 的基本語法與概念。
+
+我盡量整理程容易理解的格式、樣式，有興趣的人歡迎共同編輯這份資料夾。
+
 ## Rust 介紹
 
 Rust 是一種系統編程語言，旨在提供安全性、速度和並發性。由 Mozilla 開發，Rust 特別適合需要高性能和內存安全的應用。它的設計理念包括：
@@ -55,3 +60,7 @@ Hello, world! # 這是程式輸出
 
 - ytVideo : https://www.youtube.com/watch?v=T_KrYLW4jw8&list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ
 - rust book: https://doc.rust-lang.org/book/ch01-01-installation.html
+
+## 重點提醒
+
+**<font color="red">這份筆記檔案面向 windows 用戶，如果你是 lunix 或者 mackos 步驟可能會有所不同。</font>**
