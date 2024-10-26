@@ -6,27 +6,29 @@
 2. 跟著介面做 ( 後面你自己就會了 )
 
 ## 創建你的第一個倉庫
-1. 點選 這東西，會妳的主頁面的右上角
+1. 點選 這東西，會妳的主頁面的左上角
 
-![img](https://i.imghippo.com/files/MSy5974PFU.jpg)
+![img](https://i.imghippo.com/files/pZEW2488Ek.jpg)
 
 跟著步驟，恭喜你會了!
 
 在過程中，你可能會疑惑的點:
     - 如果你要選許可證 ( License ) ，MIT我覺得不錯
-    - .gitignore 是告訴git有些檔案永遠不要存檔，自動忽略。 例如有一份黨盎是你的帳號密碼，那肯定不可以直接丟到github上，除非倉庫是私有的
+    - .gitignore 是告訴git有些檔案永遠不要列入 提交歷史/版本紀錄 中，自動忽略。 例如有一份檔案是你的帳號密碼，那肯定不可以直接丟到github上，除非倉庫是私有的 ( 即表示別人不會看到，除非你指定 )。
 
 ## 什麼是 SSH 金鑰?
 
-SSH（金鑰安全外殼）金鑰是一種非對稱加密技術，用於安全地連接到遠端伺服器，特別是在進行版本控制（如 Git 和 GitHub）時。SSH 金鑰由一對密鑰組成：公鑰和私鑰。
+SSH（金鑰安全外殼）金鑰是一種非對稱加密技術，用於安全地連接到遠端伺服器 ( aws 的伺服器就支持 ssh 遠端連線 )、上傳代碼到 Github 等...。
 
-<font color="red"><b>免責聲明: 接下來會討論到 SSH Key 的配置方式，當然在代碼提交到遠端的過程中，https是可以被使用的! 因此如果嫌麻煩可以不要配置 SSH 金鑰，但SSH各方面來說都挺方面，看你怎麼想。</b></font>
+SSH 金鑰由一對密鑰組成：公鑰和私鑰。
+
+<font color="red"><b>免責聲明: 接下來會討論到 SSH Key 的配置方式，當然在代碼提交到遠端的過程中，https是可以被使用的! 因此如果嫌麻煩可以不要配置 SSH 金鑰，但 SSH 各方面來說都挺方面，看你怎麼想。</b></font>
 
 ### 1. 金鑰組成
 
 - **公鑰**：這東西像是一把鎖頭，你可以分給很多人讓他們自己使用這個鎖頭去加密訊息，但是正如同我前面的比喻那樣，只有鎖頭只能加密訊息並沒有鑰匙解鎖。
   
-- **私鑰**：這是你的鑰匙須妥善不可以外流。 鎖頭可以有很多個，但是鑰匙只能自己才能有。
+- **私鑰**：這是你的鑰匙須妥善保管不可外流。 鎖頭/加密方式 被流傳出去沒關係，但是 鑰匙/解密方式 流傳出去會造成安全隱患，即表示別人可以透過這把鑰匙開鎖。
 
 ### 2. 常見應用
 
@@ -43,9 +45,7 @@ GitHub 的解釋: https://docs.github.com/en/authentication/connecting-to-github
 
 ### 最牛逼的說明 -> 官方文件
 
-我真心覺得 Github 的官方文件寫超好! 我認為直接看官方文件會比以下說明來的詳細、易理解。
-
-參閱: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
+我真心覺得 [**Github 官方文件**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)寫超好! 我認為直接看官方文件會比以下說明來的詳細、易理解。
 
 ---
 
@@ -200,9 +200,7 @@ PS C:\Users\Sakiyago\Desktop\hello> git remote add origin git@github.com:Bongo04
 ![img](https://i.imghippo.com/files/LG6125Yo.jpg)
 
 
-## 一個良好的規範
+## 想了解更多嗎?
+- [**Github工作流**](Github工作流.md) <- 倉庫文件
 - [**十分钟学会正确的github工作流，和开源作者们使用同一套流程**](https://www.youtube.com/watch?v=uj8hjLyEBmU)
 - [**Git工作流**](https://medium.com/@trylovetom/%E8%AE%93%E6%88%91%E5%80%91%E4%BE%86%E4%BA%86%E8%A7%A3-github-flow-%E5%90%A7-4144caf1f1bf)
-
-## 想了解更多嗎?
-- [**Github工作流**](Github工作流.md)
