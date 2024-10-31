@@ -14,7 +14,7 @@ fn main() {
     // 輸出array的內容
     println!("array: {:?}", arr);
     // 索引訪位
-    println!("arr[0]: {}", arr[0]);
+    println!("arr[0]: {}", arr[0]); // 值得一提的是，arr[index]; 其中 index 資料型態是 usize
 
     // array 的大小被確定，不可以宣告為空
     // let arr: [i32; 5] = []; // <- 這會導致錯誤
