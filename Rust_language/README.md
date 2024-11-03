@@ -64,3 +64,11 @@ Hello, world! # 這是程式輸出
 ## 重點提醒
 
 **<font color="red">這份筆記檔案面向 windows 用戶，如果你是 lunix 或者 mackos 步驟可能會有所不同。</font>**
+
+## 補充說明
+
+嘿! 我知道網路上的資料有些說明更棒更好!
+
+這裡有一些別人的髓手筆記，如果對你有幫助，可以參考看看。
+- https://hackmd.io/@ballfish/rust-book-2020/https%3A%2F%2Fhackmd.io%2F%40ballfish%2FBkYVxV7Z8
+- https://hackmd.io/@JoshuaLee0321/rust-lang

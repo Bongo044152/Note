@@ -22,3 +22,27 @@ fn slice_method(string: &String, length: usize) -> &str {
     // return the substring of length
     &string[0..length]
 }
+
+fn _first_word1(s: &String) -> &str {
+    let s = s.trim(); // 使用 trim 不會改變原本的內容，因為它是返回 "切片"
+    let bytes = s.as_bytes(); // 返回 &u8 因此接受引用
+
+    for (i, &item) in bytes.iter().enumerate() { // 引用 &u8
+        if item == b' '{
+            return &s[..i];
+        }
+    }
+
+    &s[..]
+}
+
+fn _first_word2(s: &String) -> &str {
+    let s = s.trim();
+
+    for (i, item) in s.chars().enumerate() { // 返回 char 因此不需要引用
+        if item == ' ' {
+            return &s[..i];
+        }
+    }
+    &s[..]
+}
