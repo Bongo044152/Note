@@ -65,6 +65,15 @@ impl Triangle {
 
         arr[0].pow(2) + arr[1].pow(2) == arr[2].pow(2)
     }
+
+    fn _creat_triangle(size: u16) -> Self {
+        // Triangle 是一個元組結構體，它的字段並沒有具名，而是直接以位置來區分
+        // 因此不可以
+        // Self { size, size, size }
+        // 而是改成以下形式
+        Triangle(size, size, size)
+
+    }
 }
 fn class_like_this() {
 
