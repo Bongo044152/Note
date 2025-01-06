@@ -447,7 +447,7 @@ MILNET 僅限於處裡非機密數據，因為它不被認為是安全的。雖�
 
 在 1970年代，去中心化的網路問世，因為人們意識到 "單一的網路沒辦法解決所有的需求"。
 
-## Other Technologies Over Which TCPIIP Has Been Used
+## Other Technologies Over Which TCP/IP Has Been Used
 
 書中討論完 WAN Technologies 過後，就是一連串的古老知識 (NSFNET)等，我認為不必要理解，因為現今的網路構造不是那樣，它用於早期的美國。
 
