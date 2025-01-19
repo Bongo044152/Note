@@ -17,7 +17,7 @@
     ```
     - 否則使用 https:
     ```shell
-    https://github.com/Bongo044152/Note.git
+    git pull https://github.com/Bongo044152/Note.git
     ```
 
 2. 進入資料夾
