@@ -104,10 +104,10 @@
     - 或者詢問 GPT
 
 > **對於 "GNS3" ，請確保你具有以下知識:**
-1. 基本網路知識
-2. 基本虛擬機認識以及如何架設虛擬機
-3. docker
-4. 基本網路工具認識 ( WireShark 等 )
+1. 基本網路知識 ( 建議，但非必要 )
+2. 基本虛擬機認識以及如何架設虛擬機 ( 必要知識 )
+3. docker ( 非必要 )
+4. 基本網路工具認識 ( WireShark 等 ，非必要 )
 
 初學者建議:
 
@@ -139,13 +139,15 @@ GNS3 的學習曲線十分陡峭，要掌握並不容易 ( 我花了5天研究..
 
 ### 【GNS3 + 虛擬機】
 
+> **在嘗試使用 GNS3 搭配虛擬機之前，請先確定你的 cpu 是否支持 "虛擬技術"  : https://www.intel.com.tw/content/www/tw/zh/support/articles/000005486/processors.html**
+
 - GNS3 Install ( VMware Workstation Pro ): https://www.youtube.com/watch?v=A0DEnMi09LY&list=PLhfrWIlLOoKNFP_e5xcx5e2GDJIgk3ep6&index=2
 
 雖然影片中提到 VMware Workstation Pro 需要付費，並且只有幾天的適用時間。但是經過我的查詢，目前 VMware Workstation Pro 已經免費提供給個人用戶，您可以直接下載並開始使用。
 
 根據社群上的討論，vmware 有經過[收購風波](https://www.ithome.com.tw/news/160441)，對於 VMware Workstation Pro 因為該收購公司 ( Broadcom ) 過去在收購其他公司後往往會專注於成本削減、減少研發投入等，許多用戶認為這些產品可能不會像過去那樣的持續投入與創新，因此某些人看不起 vmware 。
 
-或許是因為風評之類的影響到了股票啥的(我不是很懂..)，總之近期11月的[官方聲明](https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html)指出，個人使用的 "VMware Workstation Pro" 直接 <font color="yellow">**免費!**</font> 因此現在我們完全不需要顧慮付費的問題。
+或許是因為風評之類的影響到了股票啥的(我不是很懂..)，總之近期11月的[官方聲明](https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html)指出，個人使用的 "VMware Workstation Pro" 直接 <font color="red">**免費!**</font> 因此現在我們完全不需要顧慮付費的問題。
 
 我個人認為 VirtualBox 的地位或許會受到些許影響，畢竟虛擬機 "免費" 的很少.. 而且 vmware 的介面比 VirtualBox 好看、簡潔很多，效能也更加。
 
@@ -159,9 +161,17 @@ GNS3 的學習曲線十分陡峭，要掌握並不容易 ( 我花了5天研究..
         ./VBoxManage modifyvm "GNS3 VM" --nested-hw-virt on
         ```
 
+### **【Issue : Virtualized Intel VTX or EPT is not supported on this platform】**
 > 如果你打算使用 VMware Workstation Pro ， 並且上面的 GNS32 Install 沒有幫助到你，我這裡有額外的影片:
+
 - [Virtualized Intel VT-x/EPT is not supported on this platform. FIXED!!!!!](https://www.youtube.com/watch?v=ABK5dC1bWfA)
     - 我在這裡註解一下，有些人的電腦有 hyper-v 或者其他裝置佔用了虛擬化的資源，需要關掉!
+- [Virtualized Intel VTX or EPT is not supported on this platform](https://www.youtube.com/watch?v=89Yq716Gb5o)
+    - 與上個影片相同，但是這邊額外提到了有關於安全軟體的設定 ( for windows )
+- [Solved : Virtualized Intel VT-X/EPT is not supported on this platform](https://www.youtube.com/watch?v=6f1Qckg2Zx0)
+    - 大同小異，但是這邊的指令好像比較多... ?
+
+**每個人的電腦狀況都各不相同，這裡只能列出我配置的兩台電腦所預見並且解決的問題 ( 我不可能列出全部 ) ，這個環節可以說是 gns3 中複雜的部分之一，如果遇到了其他問題，嘗試 google 搜尋看看吧。**
 
 ### 【如何在 GNS3 中使用其他設備】
 - 土豪選項 ( 直接購買 ) : https://www.youtube.com/watch?v=jhh2_PP9JLU&list=PLhfrWIlLOoKNFP_e5xcx5e2GDJIgk3ep6&index=3
@@ -179,6 +189,8 @@ cisco 公司的系統比較封閉，因此他會希望你使用 199$ ( 美元 ) 
         python3 CiscoIOUKeygen3f.py
         ```
     - GitHub 連結 ( 用於索取免費的資源，當然其他地方也有，自己找 ): https://github.com/hegdepavankumar/Cisco-Images-for-GNS3-and-EVE-NG?tab=readme-ov-file
+
+除了 cisco 之外，其他的設備基本上沒什麼取用問題，但是我這邊只呈現最困難的 cisco ，其他的設備似乎可以從官方渠道直接下載，問題沒有 cisco 那麼多。
 
 
 ### 【意外處理】
